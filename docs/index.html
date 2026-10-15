@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D 5e: Аркуш персонажа</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 50%; margin-bottom: 20px; }
+        th, td { border: 1px solid black; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+    <!-- Заголовок 1 рівня -->
+    <h1>Цифровий помічник гравця D&D 5e</h1>
+    
+    <!-- Посилання на окрему сторінку з описом, як вимагає завдання -->
+    <p><a href="description.html">Перейти до опису предметної галузі та бізнес-логіки</a></p>
+
+    <!-- Заголовок 2 рівня та зображення -->
+    <h2>Профіль героя</h2>
+    <img src="images/character-avatar.jpg" alt="Аватар персонажа" width="250">
+    <p><i>*Тут буде відображатися портрет вашого героя*</i></p>
+
+    <!-- Заголовок 3 рівня та маркований список -->
+    <h3>Популярні збірки та підкласи</h3>
+    <ul>
+        <li>Відроджений чарівник клинкового співу (Bladesinger)</li>
+        <li>Проклятий воїтель (Hexblade Warlock)</li>
+        <li>Воїн майстер бойових мистецтв (Battle Master)</li>
+    </ul>
+
+    <!-- Таблиця -->
+    <h3>Арсенал та здібності</h3>
+    <table>
+        <tr>
+            <th>Назва</th>
+            <th>Тип</th>
+            <th>Шкода / Ефект</th>
+        </tr>
+        <tr>
+            <td>Довгий меч (Longsword)</td>
+            <td>Зброя</td>
+            <td>1d8 рубаюча</td>
+        </tr>
+        <tr>
+            <td>Містичний постріл (Eldritch Blast)</td>
+            <td>Заклинання</td>
+            <td>1d10 силова</td>
+        </tr>
+    </table>
+
+    <!-- Форма -->
+    <h3>Створити нового персонажа</h3>
+    <form action="#" method="post">
+        <label for="charName">Ім'я персонажа:</label><br>
+        <input type="text" id="charName" name="charName" placeholder="Введіть ім'я" required><br><br>
+        
+        <label for="race">Раса:</label><br>
+        <select id="race" name="race">
+            <option value="reborn">Відроджений (Reborn)</option>
+            <option value="human">Людина (Human)</option>
+            <option value="elf">Ельф (Elf)</option>
+        </select><br><br>
+
+        <label for="level">Рівень:</label><br>
+        <input type="number" id="level" name="level" min="1" max="20" value="1"><br><br>
+
+        <input type="submit" value="Зберегти героя">
+    </form>
+
+</body>
+</html>
